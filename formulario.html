@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        label{
+            display:block;
+            float: center;
+            width: 120px;
+            
+        }
+
+    </style>
+
+</head>
+<body>
+    <form action="" id="formulario">
+        <div>
+            <label for="rut">Rut</label>
+            <input type="text" id="rut">
+        </div>
+        <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" id="nombre">
+        </div>
+        <div>
+            <label for="apellidop">Apellido Paterno</label>
+            <input type="text" id="apellidop">
+        </div>
+        <div>
+            <label for="apellidom">Apellido Materno</label>
+            <input type="text" id="apellidom">
+        </div>
+        <div>
+            <label for="edad">Edad</label>
+            <input type="number" id="edad">
+        </div>
+        <div>
+            <label for="genero">Genero</label>
+            <select name="genero" id="genero">
+                <option value="0">Genero</option>
+                <option value="1">Masculino</option>
+                <option value="2">Femenino</option>
+            </select>
+        </div>
+        <div>
+            <label for="celular">Celular</label>
+            <input type="number" id="celular">
+        </div>
+        <div>
+            <label for="motivacion">Motivacion</label>
+            <textarea cols="20" rows="5" id="motivacion"></textarea>
+        </div>
+
+        <input type="submit" value="Enviar">
+        <input type="button" value="Crear Carta" onclick="carta()">
+    </form>
+    <div id="error">
+    </div>
+
+
+
+<script src="app.js"></script>
+</body>
+</html>
