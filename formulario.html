@@ -5,19 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-        label{
-            display:block;
-            float: center;
-            width: 120px;
-            
-        }
-
-    </style>
+    <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
+<div class="todo">
     <form action="" id="formulario">
         <div>
             <label for="rut">Rut</label>
@@ -42,7 +34,7 @@
         <div>
             <label for="genero">Genero</label>
             <select name="genero" id="genero">
-                <option value="0">Genero</option>
+                <option value="0">Seleccione un genero</option>
                 <option value="1">Masculino</option>
                 <option value="2">Femenino</option>
             </select>
@@ -57,11 +49,13 @@
         </div>
 
         <input type="submit" value="Enviar">
-        <input type="button" value="Crear Carta" onclick="carta()">
+        <input type="button" value="Crear Carta" onclick="crearCarta()">
     </form>
     <div id="error">
     </div>
-
+    <h3>Carta de presentación</h3>
+    <textarea id="carta" cols="22" rows="15"></textarea>
+</div>
 
 
 <script src="app.js"></script>

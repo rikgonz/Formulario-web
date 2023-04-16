@@ -7,6 +7,7 @@ var genero = document.getElementById("genero");
 var celular = document.getElementById("celular");
 var motivacion = document.getElementById("motivacion");
 var error = document.getElementById("error");
+var carta = document.getElementById("carta");
 error.style.color = "red";
 
 
@@ -67,9 +68,20 @@ var form = document.getElementById("formulario");
             error.innerHTML = mensajesError.join(', ');
     })
 
-function carta(){
-   // alert(rut.value)
-      carta = "Señore fghkdhg gdgdgkd gds" + rut.value + "fkjghkgfh";
-      carta = "Señore fghkdhg gdgdgkd gds" + rut.value + "fkjghkgfh";
-      carta = "Señore fghkdhg gdgdgkd gds" + rut.value + "fkjghkgfh";
+
+function crearCarta() {
+
+  const cartaCampo = document.getElementById('carta');
+  const carta = `Estimados señores,
+
+Me dirijo a ustedes con el fin de presentar mi candidatura para el puesto de apoyo ambiental en Chiloé.
+
+Mi nombre es ${nombre.value} ${apellidop.value} ${apellidom.value}, mi RUT es ${rut.value}. Tengo ${edad.value} años y soy de género ${genero.value}. Me motiva postular al trabajo porque ${motivacion}.
+
+Agradezco su atención y quedo a su disposición para cualquier consulta.
+
+Atentamente,
+${nombre.value} ${apellidop.value} ${apellidom.value}`;
+
+  cartaCampo.value = carta;
 }
