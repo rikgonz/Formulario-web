@@ -76,7 +76,7 @@ function crearCarta() {
 
 Me dirijo a ustedes con el fin de presentar mi candidatura para el puesto de apoyo ambiental en Chiloé.
 
-Mi nombre es ${nombre.value} ${apellidop.value} ${apellidom.value}, mi RUT es ${rut.value}. Tengo ${edad.value} años y soy de género ${genero.value}. Me motiva postular al trabajo porque ${motivacion}.
+Mi nombre es ${nombre.value} ${apellidop.value} ${apellidom.value}, mi RUT es ${rut.value}. Tengo ${edad.value} años y soy de género ${genero.value}. Me motiva postular al trabajo porque ${motivacion.value}.
 
 Agradezco su atención y quedo a su disposición para cualquier consulta.
 
